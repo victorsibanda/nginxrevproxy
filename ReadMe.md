@@ -1,4 +1,4 @@
-# Task 3 - Multi Vagrant Machine
+# Task 4 - nginx reverse proxy
 
 
 ### In order to use this VM:
