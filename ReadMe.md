@@ -2,7 +2,7 @@
 
 
 ### In order to use this VM:
-`git clone git@github.com:victorsibanda/VagrantTask23.git`
+`git clone git@github.com:victorsibanda/nginxrevproxy.git`
 
 
 ### To Run Use:
@@ -12,11 +12,9 @@
 
 #### For app
 
-`vagrant ssh app`
-`cd /home/ubuntu/app`
-`sudo npm install`
-`sudo npm start`
+- `vagrant ssh app`
+- `cd /home/ubuntu/app`
+- `sudo npm install`
+- `sudo npm start`
 
 Go to  ---> https://development.local/
-
-#### For db
