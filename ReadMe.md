@@ -14,7 +14,7 @@
 
 - `vagrant ssh app`
 - `cd /home/ubuntu/app`
-- `sudo npm install`
+- `sudo npm install` - Only if npm start fails
 - `sudo npm start`
 
 Go to  ---> https://development.local/
