@@ -1,11 +1,11 @@
+const { faker } = require('@faker-js/faker');
 var Post = require('../models/post');
 var mongoose = require('mongoose');
-var faker = require('faker');
 
 if(process.env.DB_HOST) {
   mongoose.connect(process.env.DB_HOST);
 
-  Post.remove({} , function(){
+  Post.deleteMany({}, function(){
     console.log('Database Cleared');
   });
 
@@ -14,7 +14,7 @@ if(process.env.DB_HOST) {
 
   for(var i = 0; i < num_records; i++) {
     Post.create({
-      title: faker.random.words(),
+      title: faker.word.words(),
       body: faker.lorem.paragraphs()
     }, function(){
       count++;
@@ -22,7 +22,6 @@ if(process.env.DB_HOST) {
         mongoose.connection.close();
         console.log("Database Seeded");
       }
-    }); 
+    });
   }
 }
-
